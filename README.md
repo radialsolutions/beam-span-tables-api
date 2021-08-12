@@ -53,7 +53,7 @@ import json
 def requestLvl(beamType, spacing, span):
     request = urllib2.Request("https://43srautc24.execute-api.ap-southeast-2.amazonaws.com/teststage/get-lvl13?beamType={0}&spacing={1}&span={2}".format(beamType, spacing, span))
     request.add_header("Content-type", "application/json")
-    request.add_header("x-api-key", "qD3XZnW5TSJ4EZ9lBJvP2B57GI6GUD8kU5AsfKb0")
+    request.add_header("x-api-key", "YOUR_API_KEY")
     response = urllib2.urlopen(request)
     resJSON = json.load(response)
     return(resJSON['LVL'])
